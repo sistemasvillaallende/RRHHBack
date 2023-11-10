@@ -2,6 +2,7 @@
 
 namespace RRHHBack.Library
 {
+
     public class Periodos : DALBase
     {
         public string periodo { get; set; }
