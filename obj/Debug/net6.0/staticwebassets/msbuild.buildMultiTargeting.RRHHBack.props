@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\RRHHBack.props" />
+</Project>
