@@ -90,11 +90,11 @@ namespace RRHHBack.Entities.RRHH
         {
             try
             {
-                //WHERE fecha_baja is null AND legajo in (377, 710, 836)
                 string sql = @"SELECT legajo, cuil, fecha_ingreso, nombre, email, celular, cod_categoria, 
                                    cod_clasif_per, id_secretaria, id_direccion, id_oficina
                                FROM RRHH_APROBADORES
                                WHERE 
+                               cod_categoria>=24 AND
                                id_secretaria=@id_secretaria AND
                                id_direccion=@id_direccion";
                 List<Aprobadores> lst = new();
@@ -143,6 +143,6 @@ namespace RRHHBack.Entities.RRHH
             }
         }
 
-       
+
     }
 }
